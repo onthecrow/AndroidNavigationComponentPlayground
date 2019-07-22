@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation6"
+    app:startDestination="@id/fourthNestedFragment">
+
+    <fragment
+        android:id="@+id/fourthNestedFragment"
+        android:name="com.onthecrow.navigationtest.test3.FourthNestedFragment"
+        android:label="FourthNestedFragment">
+        <action
+            android:id="@+id/action_fourthNestedFragment_to_fourthNestedFragment2"
+            app:destination="@id/fourthNestedFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthNestedFragment2"
+        android:name="com.onthecrow.navigationtest.test3.FourthNestedFragment2"
+        android:label="fragment_fourth_nested_fragment2"
+        tools:layout="@layout/fragment_fourth_nested_fragment2" />
+
+</navigation>

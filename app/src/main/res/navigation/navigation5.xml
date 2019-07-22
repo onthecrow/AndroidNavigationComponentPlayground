@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation5"
+    app:startDestination="@id/firstNestedFragment">
+
+    <fragment
+        android:id="@+id/firstNestedFragment"
+        android:name="com.onthecrow.navigationtest.test3.FirstNestedFragment"
+        android:label="FirstNestedFragment">
+        <action
+            android:id="@+id/action_firstNestedFrament_to_firstNestedFragment2"
+            app:destination="@id/firstNestedFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstNestedFragment2"
+        android:name="com.onthecrow.navigationtest.test3.FirstNestedFragment2"
+        android:label="fragment_first_nested_fragment2"
+        tools:layout="@layout/fragment_first_nested_fragment2"/>
+
+</navigation>
